@@ -1,9 +1,10 @@
 .home {
-    background-image: url(/assets/images/newbg.jpg);
+    background-image: url(./assets/images/newbg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 650px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,18 +19,36 @@
     margin-bottom: 30px;
 }
 
-  .Aboutme {
-    height: 70vh;
+
+  .cv-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .cv-link:hover {
+    background-color: #45a049;
+  }
+  
+  .mainBox {
+    height: 80vh;
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
   }
 
-.Aboutme > div > p {
-    position: relative;
+.childBox {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -38,17 +57,11 @@
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
     padding: 0.5rem;
-    height: inherit;
-    width: 950px;
-    font-family: "Merriweather", serif
+    height: auto;
+    width: 80%; 
+    font-family: "Merriweather", serif;
+    box-shadow: 1px 1px 1rem #393E46;
     
-}
-.Jexperience {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.5rem;
 }
 
 .wexperience {
@@ -63,26 +76,12 @@
     border-radius: 0.25rem;
     padding: 2rem;
     height: auto;
-    width: 950px;
-    font-family: "Merriweather", serif
+    width: 80%;
+    font-family: "Merriweather", serif;
+    box-shadow: 1px 1px 1rem #393E46;
 }
 
 
-.cc-contact-information {
-    background-image: url(/assets/cotactmebg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    z-index: -1;
-}
 
 .row {
     display: flex;
@@ -98,14 +97,15 @@ a {
     margin: 10px px;
     text-decoration: none;
 }
-.bottom-container {
+footer {
     background-color: #5C8984;
     padding: 50px 0 10px;
     color: #40514e;
     margin: 0;
     text-align: center;
     font-family: "Merriweather", serif;
-    gap: 3rem;
+
+    
 }
 
 body h4 {
@@ -118,3 +118,4 @@ body h4 {
 .copyright {
     color: white;
 }
+
